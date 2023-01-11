@@ -6,57 +6,21 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(2,0,36);
+  background-size: 400% 400%;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,36,1) 28%, rgba(0,212,255,1) 50%, rgba(255,130,0,1) 72%, rgba(2,0,36,1) 100%);
   color: aliceblue;
+  animation: gradient 15s ease infinite;
 }
 
-h1 {
-  font-size: 6vw;
-}
 
-h2 {
-  font-size: 5vw;
-}
-
-h3 {
-  font-size: 4vw;
-}
-
-h4, h5, h6 {
-  font-size: 3vw;
-}
-
-p {
-  font-size: 2vw;
-}
-
-a {
-  font-size: 2vw;
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 5vw;
-  }
-
-  h2 {
-    font-size: 4vw;
-  }
-
-  h3 {
-    font-size: 3vw;
-  }
-
-  h4, h5, h6 {
-    font-size: 2.5vw;
-  }
-
-  p {
-    font-size: 2vw;
-  }
-
-  a {
-    font-size: 2vw;
-  }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
